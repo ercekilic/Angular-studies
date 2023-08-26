@@ -1,0 +1,28 @@
+<label>  </label>
+<!-- <input
+  type="text"
+  class="form-control" 
+  (input)="onUpdateServerName($event)"
+
+> -->
+<!-- to way of data binding -->
+<input
+  type="text"
+  class="form-control" 
+  [(ngModel)] = "serverName"
+> 
+<!-- <p>
+    {{serverName}}
+</p> -->
+
+<button class="btn btn-primary" [disabled] = "!allowNewServer"
+
+
+(click)="onCreate()">Add Server </button>
+
+<!-- <p [innerText] = "allowNewServer"></p> -->
+
+
+<p class = "kirmizi-renk-classi">{{serverCreationStatus}}</p>
+
+<button  (click)="onCreate()"  > we </button>
